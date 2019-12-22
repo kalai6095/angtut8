@@ -1,0 +1,13 @@
+<div class="container">
+    <app-inputcomp (severCreated)="onServerAdded($event)" (bluePrintedCreated)="onAddblueprintAdded($event)"></app-inputcomp>
+    <hr>
+    {{serverElements}}
+    <hr>
+    <div class="row">
+            <div class="col-xs-12">
+                    <app-servercomp *ngFor="let element of serverElements" [element]='serverElement'></app-servercomp>                
+            </div>
+        </div>
+    
+  
+</div>
